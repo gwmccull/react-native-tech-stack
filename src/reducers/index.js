@@ -1,5 +1,6 @@
-import { combinerReducers } from 'redux';
+import { combineReducers } from 'redux';
+import LibraryReducer from './LibraryReducer';
 
-export default combinerReducers({
-  libraries: () => [],
+export default combineReducers({
+  libraries: LibraryReducer,
 });
